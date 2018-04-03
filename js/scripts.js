@@ -21,37 +21,47 @@ function Ticket (movie, time, age) {
       }
     }
     if(movie === "Matrix"){
-      if(age === "child" ){
-      return "$10";
+      if(time ==="fivepm" || time ==="ninepm"){
+        if(age === "child" ){
+          return "$10";
+        }
       }
     }
-    if(movie === "Avenger" || movie === "playerOne"){
-      if(age === "child" )
-      return "$10";
+    // if(movie === "Avenger" || movie === "playerOne"){
+    //   if(age === "adult" )
+    //   return "13";
+    // }
+    // }
+        if(movie === "Matrix"){
+        if(time ==="elevenpm" || time ==="ninepm"){
+          if(age === "senior" )
+            return "$5";
+
+      }
     }
-    if(movie === "Avenger" || movie === "playerOne"){
-      if(age === "child" )
-      return "$10";
+    if(movie === "playerOne"){
+        if(time ==="elevenpm" || time ==="ninepm"){
+          if(age === "senior" ){
+            return "$9";
+        }
+      }
     }
-    if(movie === "Avenger" || movie === "playerOne"){
-      if(age === "child" )
-      return "$10";
+    if(movie === "Matinee"){
+        if(time ==="onepm" || time ==="threepm"){
+          if(age === "senior" ){
+            return "$6";
+        }
+      }
     }
-    if(movie === "Avenger" || movie === "playerOne"){
-      if(age === "child" )
-      return "$10";
+    if(movie === "Matinee"){
+        if(time ==="threepm" || time ==="fivepm"){
+          if(age === "teen" ){
+            return "$7";
+        }
+      }
     }
-    if(movie === "Avenger" || movie === "playerOne"){
-      if(age === "child" )
-      return "$10";
-    }
-    if(movie === "Avenger" || movie === "playerOne"){
-      if(age === "child" )
-      return "$10";
-    }
-    if(movie === "Avenger" || movie === "playerOne"){
-      if(age === "child" )
-      return "$10";
+    else{
+      return "Sorry we are sold out"
     }
 }
 
